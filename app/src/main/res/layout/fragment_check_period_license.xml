@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.lgroup.ltms.CheckPeriodLicenseFragment"
+    android:background="#ffffffff">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/License"
+            android:id="@+id/tvLicenseCode"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etLisenceCode"
+            android:layout_below="@+id/tvLicenseCode"
+            android:layout_alignRight="@+id/tvLicenseCode"
+            android:layout_alignEnd="@+id/tvLicenseCode"
+            android:minWidth="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+           />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LicenseCheck"
+            android:id="@+id/btnCheckLicense"
+            android:theme="@style/CustomButtonStyle"
+            android:layout_below="@+id/etLisenceCode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+</FrameLayout>

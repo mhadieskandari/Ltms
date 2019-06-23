@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.lgroup.ltms.AboutUs_Fragment"
+    android:background="#00c8ff">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView11"
+        android:layout_gravity="right|top"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:text="شرکت تجلیل گران فناوری قزوین"
+        android:paddingTop="15dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView12"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_below="@+id/textView11"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11"
+        android:paddingTop="3dp"
+        android:text="ال گروپ" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView13"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:layout_marginTop="32dp"
+        android:padding="5dp"
+        android:text="مهندس سید رضا صادقی"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView15"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:padding="5dp"
+        android:text="مهندس محمد عظیمی"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView18"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:text="مهندس میثم ساغرچی"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_below="@+id/textView15"
+        android:layout_toRightOf="@+id/textView22"
+        android:layout_toEndOf="@+id/textView22" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView19"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:padding="5dp"
+        android:text="مهندس محمد هادی اسکندری"
+        android:layout_below="@+id/textView18"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView20"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:text="کارشناس نرم افزار"
+        android:padding="5dp"
+        android:layout_above="@+id/textView21"
+        android:layout_toLeftOf="@+id/textView13"
+        android:layout_toStartOf="@+id/textView13"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView21"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:text="کارشناس ارشد  فناوری اطلاعات"
+        android:layout_below="@+id/textView13"
+        android:layout_toLeftOf="@+id/textView15"
+        android:layout_toStartOf="@+id/textView15"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView22"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:text="کارشناس ارشد هوش مصنوعی"
+        android:padding="5dp"
+        android:layout_below="@+id/textView21"
+        android:layout_alignRight="@+id/textView21"
+        android:layout_alignEnd="@+id/textView21"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView23"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:text="کارشناس نرم افزار"
+        android:layout_below="@+id/textView22"
+        android:layout_toLeftOf="@+id/textView19"
+        android:layout_toStartOf="@+id/textView19"
+        android:padding="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" />
+</RelativeLayout>

@@ -8,8 +8,10 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.util.Base64;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -47,6 +49,8 @@ import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -158,7 +162,8 @@ public class CheckPeriodLicenseFragment extends Fragment {
                                 ArrayList<Unit> units = new ArrayList<Unit>();
                                 ArrayList<Question> questions = new ArrayList<Question>();
                                 ArrayList<Unit_Detail> unit_details = new ArrayList<Unit_Detail>();
-
+                                ArrayList<Content> Contents = new ArrayList<Content>();
+                                ArrayList<Learning> learnings = new ArrayList<Learning>();
 //                          String profile =res.substring(res.indexOf("<profile"),res.indexOf("/>")+2);
 //                          res=res.replace(profile,"");
                                 //res="[{\"Profile\":[{\"id\":5,\"firstname\":\"میثم\",\"lastname\":\"ساغرچیها\",\"national_id\":\"4323513968\",\"email\":\"maysam_sa@yahoo.com\",\"mobile\":\"09107501062\",\"fullname\":\"میثم ساغرچیها\"}]},{\"Term\":[{\"id\":1,\"title\":\"نماز\",\"hour\":16,\"price\":\"25000\",\"start_date\":1442115000,\"stop_date\":1442773800,\"discription\":\"<p>sdasdasd<\\/p>\\n\",\"organization_id\":1}]}]";
@@ -220,6 +225,7 @@ public class CheckPeriodLicenseFragment extends Fragment {
                                     for (int i=0;i<jArrUnitDetails.length();i++){
                                         Unit_Detail unit_detail=new Unit_Detail(jArrUnitDetails.getJSONObject(i).getLong("id"),jArrUnitDetails.getJSONObject(i).getString("title"),jArrUnitDetails.getJSONObject(i).getLong("chapter_id"));
                                         db.Unit_Detail_Insert(unit_detail);
+                                        unit_details.add(unit_detail);
                                     }
 
                                     JSONObject jObjLearnings = jsonArray.getJSONObject(5);
@@ -228,6 +234,7 @@ public class CheckPeriodLicenseFragment extends Fragment {
                                     for (int i=0;i<jArrLearnings.length();i++){
                                         Learning learning=new Learning(jArrLearnings.getJSONObject(i).getLong("id"),jArrLearnings.getJSONObject(i).getLong("chapter_detail_id"),jArrLearnings.getJSONObject(i).getLong("content_id"),jArrLearnings.getJSONObject(i).getInt("page"));
                                         db.Learning_Insert(learning);
+                                        learnings.add(learning);
                                     }
 
                                     JSONObject jObjContents = jsonArray.getJSONObject(6);
@@ -236,6 +243,27 @@ public class CheckPeriodLicenseFragment extends Fragment {
                                     for (int i=0;i<jArrContents.length();i++){
                                         Content content=new Content(jArrContents.getJSONObject(i).getLong("id"),jArrContents.getJSONObject(i).getString("content"));
                                         db.Content_Insert(content);
+                                        Contents.add(content);
+                                    }
+
+                                    for (int i=0;i<Contents.size();i++){
+
+                                        Contents.get(i);
+                                        FileOutputStream fos = null;
+                                        try {
+                                            fos = new FileOutputStream(Environment.getExternalStorageDirectory().getPath() + "/Lqroup/"+Contents.get(i).getId()+".pdf");
+                                            try {
+                                                fos.write(Base64.decode(Contents.get(i).getContent(), Base64.DEFAULT));
+                                            } catch (IOException e) {
+                                                e.printStackTrace();
+                                            }
+                                            fos.close();
+                                        } catch (FileNotFoundException e) {
+                                            e.printStackTrace();
+                                        } catch (IOException e) {
+                                            e.printStackTrace();
+                                        }
+
                                     }
 
 

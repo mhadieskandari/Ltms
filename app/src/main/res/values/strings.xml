@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Lgroup</string>
+
+    <string name="title_section_Profile">اطلاعات کاربر</string>
+    <string name="title_section_Period">دوره ها</string>
+    <string name="title_section_AboutUs">درباره ما</string>
+    <string name="title_section_ContactUs">تماس با ما</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">تنظیمات</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="PeriodName">نام دوره</string>
+    <string name="StartDate">تاریخ شروع</string>
+    <string name="EndDate">تاریخ پایان</string>
+    <string name="State">وضعیت</string>
+    <string name="Desc">توضیحات</string>
+    <string name="Licence">لایسنس</string>
+    <string name="TestTime">زمان آزمون</string>
+    <string name="StartLearning">شروع آموزش</string>
+    <string name="BeginTest">شروع آزمون</string>
+    <string name="FirstName">نام</string>
+    <string name="LastName">نام خانوادگی</string>
+    <string name="PhoneNumber">همراه</string>
+    <string name="HomeNumber">تلفن</string>
+    <string name="School">مدرسه</string>
+    <string name="Mantagheh">منطقه</string>
+    <string name="PersonalNumber">شماره پرسنلی</string>
+    <string name="NationNumber">کد ملی</string>
+    <string name="ShSh">شماره شناسنامه</string>
+    <string name="Email">ایمیل</string>
+    <string name="Save">ذخیره</string>
+    <string name="title_activity_learning">Learning</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_learning__activiy">Learning_Activiy</string>
+    <string name="Next">بعدی</string>
+    <string name="Previus">قبلی</string>
+    <string name="TestResult">نتیجه آزمون</string>
+    <string name="LicenseCheck">ارسال لایسنس و دریاف دوره آموزش</string>
+    <string name="License">کد لایسنس </string>
+    <string name="failedToConnectInternet">خطا در اتصال به اینترنت</string>
+    <string name="PeriodStart">شروع دوره</string>
+    <string name="aboutus">شرکت تعاونی تجلیل گران فناوری قزوین (ال گروپ)</string>
+    <string name="sendresult">ارسال کارنامه</string>
+    <string name="PeriodHours">ساعت دوره</string>
+    <string name="Score">نمره آزمون</string>
+    <string name="title_activity_pdf_viewer">PdfViewerActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+
+</resources>

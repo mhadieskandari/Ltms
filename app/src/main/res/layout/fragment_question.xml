@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.lgroup.ltms.QuestionFragment"
+    android:background="#00c8ff">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/txtQuestion"
+        android:layout_gravity="right|top"
+        android:gravity="right"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:textColor="#000000" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtQuestion"
+        android:id="@+id/radioGroupQuestion">
+
+
+    <RadioButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="New RadioButton"
+        android:id="@+id/rdbSel1"
+        android:layout_gravity="right|top"
+        android:layout_below="@+id/txtQuestion"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:drawableRight="@android:drawable/btn_radio"
+        android:gravity="right"
+        android:padding="5dp"
+        android:button="@null"
+        android:textColor="#000000" />
+
+    <RadioButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="New RadioButton"
+        android:id="@+id/rdbSel2"
+        android:layout_gravity="right|top"
+        android:layout_below="@+id/rdbSel1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:drawableRight="@android:drawable/btn_radio"
+        android:gravity="right"
+        android:padding="5dp"
+        android:button="@null"
+        android:textColor="#000000" />
+
+    <RadioButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="New RadioButton"
+        android:id="@+id/rdbSel3"
+        android:layout_gravity="right|top"
+        android:layout_below="@+id/rdbSel2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:drawableRight="@android:drawable/btn_radio"
+        android:gravity="right"
+        android:padding="5dp"
+        android:button="@null"
+        android:textColor="#000000" />
+
+    <RadioButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="New RadioButton"
+        android:id="@+id/rdbSel4"
+        android:layout_gravity="right|top"
+        android:layout_below="@+id/rdbSel3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:drawableRight="@android:drawable/btn_radio"
+        android:gravity="right"
+        android:padding="5dp"
+        android:button="@null"
+        android:textColor="#000000" />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Next"
+        android:id="@+id/btnNextQuestion"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/txtAnswer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="right"
+        android:padding="30dp"
+        android:layout_below="@+id/radioGroupQuestion" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/txtPercentage"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btnNextQuestion"
+        android:layout_toStartOf="@+id/btnNextQuestion"
+        android:textColor="#ff0004ff" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarResult"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/txtPercentage"
+        android:layout_toStartOf="@+id/txtPercentage"
+        android:layout_alignTop="@+id/btnNextQuestion"
+        android:progress="50" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="قبول شدی میتونی ادامه ندی"
+        android:id="@+id/tvpass"
+        android:layout_above="@+id/progressBarResult"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/progressBarResult"
+        android:layout_alignEnd="@+id/progressBarResult"
+        android:visibility="invisible"
+        android:textColor="#ff00ff09" />
+
+</RelativeLayout>

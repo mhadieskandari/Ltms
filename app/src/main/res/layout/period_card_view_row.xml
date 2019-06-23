@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_Pay"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="10dp"
+        android:background="#ffe8f6ff">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="10dp">
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvUnitName"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textStyle="bold"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:padding="2dp" />-->
+
+            <TextView
+                android:id="@+id/tvPeriodTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:padding="2dp" />
+
+
+            <TextView
+                android:id="@+id/tvPeriodUnitsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPeriodTitle"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@+id/tvPeriodTitle"
+                android:padding="2dp" />
+            <TextView
+                android:id="@+id/tvPeriodStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPeriodUnitsCount"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@+id/tvPeriodUnitsCount"
+                android:padding="2dp" />
+            <TextView
+                android:id="@+id/tvPeriodEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="false"
+                android:layout_below="@+id/tvPeriodStartDate"
+                android:layout_alignRight="@+id/tvPeriodStartDate"
+                android:padding="2dp" />
+            <TextView
+                android:id="@+id/tvPeriodTestTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPeriodEndDate"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="false"
+                android:layout_alignRight="@+id/tvPeriodEndDate"
+                android:padding="2dp" />
+            <TextView
+                android:id="@+id/tvPeriodLicense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPeriodTestTime"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="false"
+                android:layout_alignRight="@+id/tvPeriodTestTime"
+                android:padding="2dp" />
+            <TextView
+                android:id="@+id/tvPeriodState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPeriodLicense"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="false"
+                android:layout_alignRight="@+id/tvPeriodLicense"
+                android:padding="2dp" />
+
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnStart"
+                android:text="شروع دوره"
+
+                android:layout_below="@+id/tvPeriodState"
+                android:layout_alignRight="@+id/tvPeriodState"
+                android:layout_alignEnd="@+id/tvPeriodState" />
+
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSend"
+                android:text="ارسال کارنامه"
+                android:layout_alignRight="@+id/tvPeriodState"
+                android:layout_alignEnd="@+id/tvPeriodState"
+                android:layout_below="@+id/btnStart" />
+
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

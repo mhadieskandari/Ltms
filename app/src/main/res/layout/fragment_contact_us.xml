@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.lgroup.ltms.ContactUs_Fragment"
+    android:background="#00c8ff">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView24"
+        android:layout_gravity="right|top"
+        android:padding="10dp"
+        android:text="آدرس : قزوین ,خیابان نادری جنوبی , کوچه شهید زرآبادی,ساختمان غنچه , طبقه دوم"
+        android:gravity="right"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView25"
+        android:layout_gravity="right|top"
+        android:padding="10dp"
+        android:layout_below="@+id/textView24"
+        android:layout_centerHorizontal="true"
+        android:text="تلفن : 028332365767,09122825688"
+        android:gravity="right" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView26"
+        android:layout_gravity="right|top"
+        android:padding="10dp"
+        android:gravity="right"
+        android:layout_below="@+id/textView25"
+        android:layout_centerHorizontal="true"
+        android:text="آدرس سایت : www.lgroup.ir" />
+</RelativeLayout>
